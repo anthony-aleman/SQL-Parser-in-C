@@ -156,7 +156,7 @@ void printToken(Symbols token) {
 int main(){
     printf("Starting Parser\n");
 
-    char* input = "SELECT ColumnName FROM neopetsFile WHERE ColumnName = 'jubjub';";
+    char* input = "SELECT ColumnName FROM File WHERE ColumnName = 'value';";
 
     Symbols* tokens = lexer(input);
 
