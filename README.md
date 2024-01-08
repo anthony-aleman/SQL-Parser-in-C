@@ -2,5 +2,5 @@
 LL(1) Parser using C11
 
 ```<name of the language>
-<code>
+SELECT ColumnName FROM File WHERE ColumnName = 'value';
 ```
