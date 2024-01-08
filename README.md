@@ -6,6 +6,8 @@ The Following SQL:
 SELECT ColumnName FROM File WHERE ColumnName = 'value';
 ```
 Results in this output:
+
+
 ---
 editor_options:
   chunk_output_type: console
