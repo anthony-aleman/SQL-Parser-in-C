@@ -5,6 +5,33 @@
 #include <ctype.h>
 
 
+// Project: LL(1) SQL Parser
+// Author: Anthony Aleman
+// 
+// Description: This is a simple LL(1) SQL Parser written using C11. 
+//            This tool will be used to query simple CSV files.
+//            This is a work in progress and is not yet complete 
+//            as this only parses a small subset of SQL.
+//                                                                  .
+//
+//  Current SQL subset supported:
+//    - SELECT
+//    - WHERE
+//    - Table names as the csv file names (FROM)
+//    - Column names without aliases
+//   
+// Example Query: SELECT column1, column2 FROM table1 WHERE column1 = 'value';
+//
+// Writing Grammar:
+//  Query -> SELECT ColumnList FROM TableName WhereClause
+//  ColumnList -> ColumnName ColumnListTail
+//  ColumnListTail -> , ColumnName ColumnListTail | e
+//  TableName -> identifier
+//  WhereClause -> WHERE Condition | e
+//  Condition -> ColumnName = Value
+//  ColumnName -> identifier
+//  Value -> string_literal,
+
 
 
 //Definig tokens
