@@ -1,5 +1,5 @@
 # SQL-Parser-in-C
-LL(1) Parser using C11
+I created LL(1) Parser using C11 for the purpose of querying simple csv files
 
 The Following SQL input:
 ```<SQL>
