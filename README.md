@@ -1,7 +1,7 @@
 # SQL-Parser-in-C
 LL(1) Parser using C11
 
-The Following SQL:
+The Following SQL input:
 ```<SQL>
 SELECT ColumnName FROM File WHERE ColumnName = 'value';
 ```
